@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    color: black;
+    
+}
+body{
+    height: 100vh;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(128, 128, 128, 0.18);
+}
+.container{
+    max-width: 99%;
+    background-image: linear-gradient(135deg,#f8fcb6,#e48ce5);
+    margin: auto;
+    padding: 0;
+       
+}
+.header-content{
+    background-color: #ff7170;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 7.3rem;
+    padding-right: 7.3rem;
+    letter-spacing: 5px;
+    overflow: hidden;
+}
+/* Media query for screens smaller than 768px (tablets and below) */
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Stack items vertically */
+        padding-left: 1rem; /* Reduce left padding */
+        padding-right: 1rem; /* Reduce right padding */
+        text-align: center; /* Center-align text */
+        letter-spacing: 2px; /* Decrease letter spacing */
+    }
+}
+.nav{
+    display: none;
+    gap: 4.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+@media screen and (min-width:768px){
+ .nav{
+    display: flex;
+ }
+ 
+ .header-content{
+    margin-bottom: 0;
+ }
+}
+.nav-link{
+    font-size: 1.355rem;
+    font-weight: 900;
+    font-weight: bold;
+}
+.nav-link:nth-child(4):hover{
+    color:white;
+}
+.menu-button{
+    border: none;
+    background-color:#ff7170;
+    margin-left: 1.2rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+@media screen and (max-width:768px){
+    .menu-button{
+        display: block;
+    }
+}
+.menu-icon{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.main-section{
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    /* padding: 0.6rem; */
+    align-items: center;
+    margin: 0 auto;
+}
+@media screen and (min-width:768px){
+    .main-section{
+        max-width: 100%;
+        flex-direction: row;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 6rem;
+    }
+}
+.content-left{
+    text-align: center;
+    font-family: Arial;
+}
+@media screen and (min-width:768px){
+    .content-left{
+        text-align: left;
+        max-width: 50%;
+    }
+
+}
+.section-title{
+    font-size: 2.25rem;
+    padding: 1.1rem;
+}
+@media screen and (min-width:768px){
+    .section-title{
+        padding-left: 0;
+        margin-top: 0;
+        font-size: 2.7rem;
+        letter-spacing: .3rem;
+        font-weight: bolder;
+        font-weight: 900;
+    }
+    
+}
+
+.section-description{
+    color: rgb(22, 21, 21);
+    font-size: 1.13rem;
+}
+@media screen and (min-width:768px){
+    .section-description{
+        margin-top: 2rem;
+        line-height: 1.28rem;
+        max-width: 90%;
+        font-size: 0.88rem;
+    }
+}
+.button-group{
+    margin-top:3rem;
+    margin-bottom:2rem;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width:768px)
+{
+.button-group{
+    margin-top: 4.5rem;
+}
+}
+.click-button{
+    border: none;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+    background-color: #ff7170;
+    color: white;
+    padding: 1rem 5.5rem;
+    transform:all 0.1s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media screen and (min-width:768px){
+    .click-button{
+        padding:0.7rem 3.8rem;
+        font-size: 0.7rem;
+        font-weight: normal;
+    }
+}
+.image-container{
+    overflow: hidden;
+    margin: 0;
+}
+.section-image{
+    width:100%;
+    height:500px;
+    object-fit: cover;
+}
+@media screen and (min-width:768px){
+    .section-image{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        max-width:100%;
+        height:550px ;
+    }
+}
+.container2{
+    width: 99%; 
+    height: 950px; 
+    background: linear-gradient(135deg,#f8fcb6,#e48ce5);
+    display: flex; 
+    flex-direction: row; 
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    
+}
+
+.parent {
+    /* width: 85%;
+    margin: 20px auto; */
+    border: none;
+    display: flex;
+    align-items: center;
+    /* Clearfix to contain floated elements */
+}
+
+.child {
+    float: left;
+    box-sizing: border-box;
+    width: 45%;
+    margin-left: 20px;
+}
+.child img {
+    width: 100%;
+    height: 221px; 
+    display: block;
+    object-fit: cover; /* Ensure images cover their container */
+    margin-right: 20px; /* Add a right margin for space between images */
+
+}
+
+/* Media query for screens smaller than 768px (tablets and below) */
+@media screen and (max-width: 768px) {
+    .child {
+      
+        margin-top: 20px; /* Add bottom margin for spacing */
+    }
+
+}
+
+
+.child img:last-child {
+    margin-right: 0; /* Remove right margin for the last image in each .child */
+}
+
+.child.special img {
+    height: 460px; /* Set a different height for the third image */
+}
+.child img + img {
+    margin-top: 20px; /* Add space between images within the same .child */
+   
+}
+@media screen and (min-width:768px){
+.container2{
+    max-height: 90%;
+    flex-direction: row;
+    }
+.parent{
+    width:90%;
+    /* margin-top: 9rem; */
+    margin-left: 5rem;
+    margin-right: 0;
+}
+
+
+}  
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.parentrightcontent {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    background-color: #ff7170;
+    height: 250px; /* Adjust height as needed */
+    width: 100%; /* Set width as needed */
+    margin-right: 20px; /* Add margin from the right */
+    margin-top: auto; /* Push div to the top of the viewport */
+    margin-bottom: auto; /* Push div to the bottom of the viewport */
+}
+
+
+span {
+    font-size: small;
+}
+.parentrightcontent h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: 2px; /* Decrease letter spacing for better readability */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Styles for screens smaller than 768px (tablets and below) */
+@media screen and (max-width: 768px) {
+    .parentrightcontent {
+        height: 200px; /* Adjust height for smaller screens */
+        margin: 20px;
+    }
+
+    .parentrightcontent h2 {
+        font-size: 2rem; /* Decrease font size for smaller screens */
+    }
+}
+
+/* Styles for screens larger than 768px (desktops) */
+@media screen and (min-width: 769px) {
+    .parentrightcontent {
+        height: 250px; /* Adjust height for larger screens */
+    }
+
+    .parentrightcontent h2 {
+        font-size: 3rem; /* Restore original font size for larger screens */
+    }
+}
+.button {
+    display: inline-block; /* Make the button inline */
+    background-color: #ff7170;
+    border: none;
+    padding: 10px 20px; /* Add padding to make the button clickable */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+/* Styles for the button text */
+.button span {
+    margin-right: 5px; /* Add some spacing between text and image */
+}
+/* Styles for the button image */
+#arrow {
+    vertical-align: middle; /* Align the image vertically */
+}
+
+
+@media screen and (min-width:768px){
+   
+    span{
+        font-size: small;
+    }
+   
+    .button{
+        justify-content: flex-start;
+        text-align:left;
+        margin-left: 0;
+        font-size: smaller;
+    }
+}
